@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Game!</title>
+</head>
+
+<body>
+    <div class="container" id="c">
+        <div class="flex-mid">
+            <div class="text" id="q">Play The Game?</div>
+        </div>
+        <div class="btn-c">
+            <div class="flex-mid">
+                <button class="btn" id="btn1" onclick="btnfunction1()">Yes!</button>
+            </div>
+            <div class="flex-mid">
+                <button class="btn" id="btn2" onclick="btnfunction2()">No!</button>
+            </div>
+        </div>
+    </div>
+    <div id="other" class="hide">
+        <p>Subs <a href="https://www.youtube.com/channel/UCcxo20E7PJ0CjIOHhVedfGg">My Chanel</a></p>
+        <p>Thanks for <a href="https://www.youtube.com/channel/UC9S-tJ_XUXZKXDAXGsQ6VKQ">PotatoSalad</a> for helping me make some question.</p>
+        <p><a href="https://discord.gg/ezumjzypZF">Join my Discord</a> to chat with me and find new friends!</p>
+        <button class="btn" onclick="hideOther()">X</button>
+    </div>
+    <button class="btn mq" id="sq" onclick="showOther()">?</button>
+    <div class="CoW" id="cow"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

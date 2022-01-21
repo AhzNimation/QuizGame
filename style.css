@@ -1,0 +1,128 @@
+html, body{
+    margin: 0;
+    background-color: royalblue;
+    /* overflow-x: hidden; */
+}
+*{
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    background-color: #f0f0f0;
+    width: fit-content;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    padding: 40px;
+    border-radius: 15px;
+    transform: translate(-50%);
+    box-shadow: 0 8.5px 0 rgb(0, 0, 0, 0.3);
+}
+.text{
+    text-align: center;
+    font-size: 25px;
+    margin: 15px 0;
+    max-width: 300px;
+    text-shadow: 0 2px 0 rgb(0, 0, 0, 0.2);
+}
+.btn-c{
+    width: fit-content;
+    margin: auto;
+}
+.btn{
+    color: rgb(80, 80, 160);
+    margin: auto;
+    background-color: rgb(100, 140, 255);
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(100, 140, 255);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 20px;
+    margin: 5px;
+    font-variant: small-caps;
+    box-shadow: 0 3px 0 rgb(0, 0, 0, 0.25);
+    transition: .3s;
+}
+.btn:hover{
+    border-color: royalblue;
+    color: rgb(35, 50, 130);
+}
+.btn:focus{
+    background-color: royalblue;
+    border-color: royalblue;
+    color: rgb(200, 235, 255);
+}
+.btn.mq{
+    outline: none;
+    aspect-ratio: 1;
+    width: 40px;
+    background-color: rgb(100, 140, 255);
+    border-color: rgb(100, 140, 255);
+    border-radius: 50%;
+    padding: 2px;
+    margin: 5px;
+    box-shadow: none;
+}
+.btn.mq:hover{
+    border-color: royalblue;
+}
+.btn.mq:focus{
+    background-color: royalblue;
+    border-color: royalblue;
+    color: rgb(200, 235, 255);
+}
+.mq{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.flex-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CoW{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.8;
+}
+
+.hide{
+    display: none !important;
+}
+
+#other{
+    position: absolute;
+    background-color: #f0f0f0;
+    box-shadow: 0 4.5px 0 rgb(0, 0, 0, 0.3);
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    min-height: 300px;
+    max-width: 300px;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: justify;
+    z-index: 10;
+}
+#other a{
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    transition: 0.3s;
+}
+#other a:hover{
+    color: black;
+    text-decoration: underline;
+}
+#other .btn{
+    display: block;
+    font-size: 15px;
+    aspect-ratio: 1;
+    width: 30px;
+    padding: 2px;
+}
