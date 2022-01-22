@@ -21,7 +21,8 @@ let question = [
     'What is the largest country in the world?',
     'When covid 19 started?',
     'Blocky game that reached 1 trillion views on youtube',
-    'Rick Astley best music?'
+    'Kinetic energy formula?',
+    "Wati's mother has 5 children, the first child is named Lala, the second child is Lele, the third child is Lili, the fourth is Lulu. What is the name of the fifth child?"
 ], answer1 = [
     '10,000',
     '9',
@@ -36,7 +37,9 @@ let question = [
     'China',
     'Rusia',
     '2019',
-    'Minecraft'
+    'Minecraft',
+    '<span style="font-variant: normal;">½ • m • v²</span>',
+    'Wati'
 ], answer2 = [
     '100,000',
     '1',
@@ -51,7 +54,9 @@ let question = [
     'Nepal',
     'China',
     '2020',
-    'Roblox'
+    'Roblox',
+    '<span style="font-variant: normal;">m • g • h</span>',
+    'Lolo'
 ], trueAnswer = [
     '10,000',
     '9',
@@ -66,7 +71,9 @@ let question = [
     'China',
     'Rusia',
     '2019',
-    'Minecraft'
+    'Minecraft',
+    '<span style="font-variant: normal;">½ • m • v²</span>',
+    'Wati'
 ]
 let point = 0,
     currentQuestionIndex = 0;
@@ -74,7 +81,7 @@ let point = 0,
 let random = Math.floor(Math.random() * 2);
 
 function btnfunction1() {
-    if (btn1.innerText == trueAnswer[currentQuestionIndex]) {
+    if (btn1.innerHTML == trueAnswer[currentQuestionIndex]) {
         point++;
         cow.innerText = '✔️';
     } else {
@@ -87,11 +94,11 @@ function btnfunction1() {
 
 
 function btnfunction2() {
-    if (btn2.innerText == trueAnswer[currentQuestionIndex]) {
+    if (btn2.innerHTML == trueAnswer[currentQuestionIndex]) {
         point++;
-        cow.innerText = '✔️';
+        cow.innerHTML = '✔️';
     } else {
-        cow.innerText = '❌';
+        cow.innerHTML = '❌';
     }
     random = Math.floor(Math.random() * 2);
     currentQuestionIndex++;
@@ -101,7 +108,7 @@ function end() {
     if (currentQuestionIndex >= question.length) {
         btn1.classList.add('hide');
         btn2.classList.add('hide');
-        q.innerText = 'Your answered ' + point + ' / ' + question.length + ' correctly!';
+        q.innerHTML = 'Your answered ' + point + ' / ' + question.length + ' correctly!';
     }
 }
 
@@ -133,7 +140,7 @@ function showOther(){
 }
 
 function update() {
-    q.innerText = question[currentQuestionIndex];
+    q.innerHTML = question[currentQuestionIndex];
     buttonFill();
     end();
     setTimeout(update);
