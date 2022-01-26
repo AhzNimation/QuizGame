@@ -78,7 +78,7 @@ let question = [
 let point = 0,
     currentQuestionIndex = 0;
 
-let random = Math.floor(Math.random() * 2);
+let random = Math.floor(Math.random() * 2)
 
 function btnfunction1() {
     if (btn1.innerHTML == trueAnswer[currentQuestionIndex]) {
@@ -140,7 +140,7 @@ function showOther(){
 }
 
 function update() {
-    q.innerHTML = question[currentQuestionIndex];
+    q.innerHTML = (currentQuestionIndex + 1) + ". " + question[currentQuestionIndex];
     buttonFill();
     end();
     setTimeout(update);
