@@ -108,7 +108,7 @@ function end() {
     if (currentQuestionIndex >= question.length) {
         btn1.classList.add('hide');
         btn2.classList.add('hide');
-        q.innerHTML = 'Your answered ' + point + ' / ' + question.length + ' correctly!';
+        q.innerHTML = '<p>Your answered ' + point + ' / ' + question.length + ' correctly!</p> <p> Your Score is : ' + (100 / question.length * point);
     }
 }
 
